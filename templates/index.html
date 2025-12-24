@@ -7,21 +7,21 @@
         <link rel="stylesheet" href="/public/newstyle.css" />
     </head>
     <body>
-        <h1 class="title">Jewgle</h1>
+        <h1 class="title">Navi</h1>
         <main class="container">
-            <section class="Search">
+            <div class="search">
                 <form action="https://duckduckgo.com/" method="get" target="_blank">
                     <input type="text" name="q" placeholder="Search the Wired..." aria-label="Search the web" />
                     <button type="submit">Search</button>
                     <button type="reset">Reset</button>
                 </form>
-                <div id="presentDay"></div>
-                <div id="presentTime"></div>
-                <div id="presentWeather">
-                    Present weather will go here
-                </div>
-            </section>
+            </div>
+            <div id="presentDay"></div>
+            <div id="presentTime"></div>
+            <div id="presentWeather">Present weather will go here</div>
         </main>
+        
+        
         <script src="/static/scripts/clock.js"></script>
     </body>
 </html>
