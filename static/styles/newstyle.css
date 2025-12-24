@@ -1,17 +1,50 @@
+@font-face {
+    font-family: "AG";
+    src: url("/static/fonts/AppleGaramond.ttf");
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
 .title {
     text-align: center;
+    font-family: "AG", sans-serif;
 }
 .container {
     display: grid;
     grid-template-columns: auto auto;
 }
+
+.searchbar {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+}
+.searchbar:focus {
+    background-color: skyblue;
+    font-size: 16px;
+}
 .search {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 3;
+    align-content: center;
+    text-align: center;
 }
 .container div {
-    background-color: #a4d1fc;
-    border: 1px solid black;
+    border: 1px solid #d8d8d8;
     padding: 10px;
     font-size: 20px;
     text-align: center;
+    align-content: center;
+}
+button {
+    background-color: skyblue;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px
 }
